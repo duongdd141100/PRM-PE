@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PRM392.M2-HE140609</string>
+    <array name="type">
+        <item>Double</item>
+        <item>Single</item>
+        <item>Twin</item>
+    </array>
+</resources>

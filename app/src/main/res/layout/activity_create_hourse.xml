@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateHourseActivity">
+
+    <TextView
+        android:id="@+id/tv_room_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room No" />
+
+    <EditText
+        android:id="@+id/et_room_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_room_no"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_guest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_room_no"
+        android:text="Guest Name" />
+
+    <EditText
+        android:id="@+id/et_guest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_room_no"
+        android:layout_toRightOf="@id/tv_room_no"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_guest_name"
+        android:text="Type" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_guest_name"
+        android:layout_toRightOf="@id/tv_type"
+        android:inputType="text"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_type"
+        android:text="Price ($)" />
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_type"
+        android:layout_toRightOf="@id/tv_price"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_price"
+        android:text="Description" />
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_price"
+        android:layout_toRightOf="@id/tv_description"
+        android:inputType="text"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_description"
+        android:text="Save" />
+
+
+</RelativeLayout>
